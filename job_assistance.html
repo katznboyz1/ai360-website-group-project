@@ -10,25 +10,13 @@
         var dest = '';
         search_query = search_query.toLowerCase();
         
-        if (search_query == 'home') {
-            dest = 'home.html';
-        }
-        else if (search_query == 'about' || search_query == 'about us') {
-            dest = 'about.html';
-        }
-        else if (search_query == 'contact' || search_query == 'contact us') {
-            dest = 'contact%us.html';
-        }
-        else if (search_query == 'jobs') {
-            dest = 'job%assistance.html';
-        }
-        else if (search_query == 'employers' || search_query == 'employer help') {
-            dest = 'employer%help.html';
-        }
-        else {
-            dest = '404%error.html';
-        }
-        window.location.href = dest;
+        if (search_query == 'home') {dest = 'home.html';}
+        else if (search_query == 'about' || search_query == 'about us') {dest = 'about.html';}
+        else if (search_query == 'contact' || search_query == 'contact us') {dest = 'contact_us.html';}
+        else if (search_query == 'jobs') {dest = 'job_assistance.html';}
+        else if (search_query == 'employers' || search_query == 'employer help') {dest = 'employer_help.html';}
+        else {dest = '404_error.html';}
+        window.location.href = 'https://katznboyz1.github.io/ai360-website-group-project/' + dest;
     }
     function job_search() {
         //make this expand the page and bring up search results for the job
@@ -154,13 +142,13 @@
 	<body>
 		<!--HEADER-->
 		<div id = 'header_bg'/>
-		<a href = 'home.html' title = 'AI360 logo'><img src = 'images/ai360logo_blue.png' id = 'header_image_1'/></a>
-		<a href = 'about.html' title = 'About us'><text id = 'about_us_button'>About us</text></a>
-		<a href = 'employer%help.html' title = 'Employer help'><text id = 'employer_help_button'>Employer help</text></a>
-		<a href = 'job%assistance.html' title = 'Job finding assistance'><text id = 'job_help_button'>Job finding assistance</text></a>
-		<a href = 'contact%us.html' title = 'Contact us'><text id = 'contact_us_button'>Contact us</text></a>
+		<a href = 'https://katznboyz1.github.io/ai360-website-group-project/home.html' title = 'AI360 logo'><img src = 'images/ai360logo_blue.png' id = 'header_image_1'/></a>
+		<a href = 'https://katznboyz1.github.io/ai360-website-group-project/about.html' title = 'About us'><text id = 'about_us_button'>About us</text></a>
+		<a href = 'https://katznboyz1.github.io/ai360-website-group-project/employer_help.html' title = 'Employer help'><text id = 'employer_help_button'>Employer help</text></a>
+		<a href = 'https://katznboyz1.github.io/ai360-website-group-project/job_assistance.html' title = 'Job finding assistance'><text id = 'job_help_button'>Job finding assistance</text></a>
+		<a href = 'https://katznboyz1.github.io/ai360-website-group-project/contact_us.html' title = 'Contact us'><text id = 'contact_us_button'>Contact us</text></a>
+		<a href = 'https://katznboyz1.github.io/ai360-website-group-project/home.html' title = 'home page ; current page'><text id = 'home_button'>Home page</text></a>
         <input id = 'header_search_bar_1' placeholder = 'Search our website'/>
-		<a href = 'home.html' title = 'home page ; current page'><text id = 'home_button'>Home page</text></a>
         <button onclick = 'screenset()' id = 'button_1'>Search</button>
 		
 		<!--MAIN CONTENT-->
