@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+
+<head><link rel = "stylesheet" type = "text/css" href = "header.css" /></head>
+
+<script type = 'text/javascript'>
+    function screenset() {
+        console.log('screenset() called')
+        var search_query = document.getElementById('header_search_bar_1').value;
+        var dest = '';
+        search_query = search_query.toLowerCase();
+        
+        if (search_query == 'home') {
+            dest = 'home.html';
+        }
+        else if (search_query == 'about' || search_query == 'about us') {
+            dest = 'about.html';
+        }
+        else if (search_query == 'contact' || search_query == 'contact us') {
+            dest = 'contact%us.html';
+        }
+        else if (search_query == 'jobs') {
+            dest = 'job%assistance.html';
+        }
+        else if (search_query == 'employers' || search_query == 'employer help') {
+            dest = 'employer%help.html';
+        }
+        else {
+            dest = '404%error.html';
+        }
+        window.location.href = dest;
+    }
+</script>
+
+<style>
+    body {
+        background-color: lightblue;
+        font-family: Segoe UI;
+    }
+    #about_us_button {
+        background-color: darkblue;
+        color: white;
+    }
+    #text_1 {
+        position: absolute;
+        background-color: lightblue;
+        color: black;
+        font-size: 20px;
+        top: 170px;
+        text-align: center;
+        left: 300px;
+    }
+    #video_1 {
+        background-color: dimgray;
+        position: absolute;
+        width: 500px;
+        height: 300px;
+        color: black;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        top: 610px;
+        left: 300px;
+    }
+    #footer_heartshare_logo {
+        position: absolute;
+        top: 1200px;
+    }
+    #image_1 {
+        background-color: dimgray;
+        position: absolute;
+        width: 500px;
+        height: 300px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        top: 610px;
+        left: 900px;
+    }
+    #google_logo {
+        position: absolute;
+        background-color: lightblue;
+        top: 1200px;
+        left: 500px;
+        width: 300px;
+        height: 100px;
+    }
+    #sal1 {
+        position: absolute;
+        background-color: lightblue;
+        top: 1200px;
+        left: 1000px;
+        width: 200px;
+        height: 100px;
+    }
+    #rc_logo {
+        position: absolute;
+        background-color: lightblue;
+        top: 1200px;
+        left: 1500px;
+        height: 100px;
+        width: 200px;
+    }
+</style>
+
+<script type = 'text/javascript'>document.title = 'ai360';</script>
+
+<html lang = 'en-us'>
+	<body>
+		<!--HEADER-->
+		<div id = 'header_bg'/>
+		<a href = 'home.html' title = 'AI360 logo'><img src = 'images/ai360logo_blue.png' id = 'header_image_1'/></a>
+		<a href = 'about.html' title = 'About us'><text id = 'about_us_button'>About us</text></a>
+		<a href = 'employer%help.html' title = 'Employer help'><text id = 'employer_help_button'>Employer help</text></a>
+		<a href = 'job%assistance.html' title = 'Job finding assistance'><text id = 'job_help_button'>Job finding assistance</text></a>
+		<a href = 'contact%us.html' title = 'Contact us'><text id = 'contact_us_button'>Contact us</text></a>
+		<a href = 'home.html' title = 'home page ; current page'><text id = 'home_button'>Home page</text></a>
+        <input id = 'header_search_bar_1' placeholder = 'Search our website'/>
+        <button onclick = 'screenset()' id = 'button_1'>Search</button>
+		
+		<!--FOOTER-->
+		<a href = 'https://www.heartshare.org/'><img id = 'footer_heartshare_logo' src = 'images/heartshare-logo.png' title = 'Heartshare is a proud sponsor of ai360!'/></a>
+        <a href = 'https://www.google.com/'><img id = 'google_logo' src = 'images/google_logo.png' title = 'Google is a proud sponsor of ai360!'/></a>
+        <a href = 'https://www.salvationarmy.org/'><img src = 'images/salvation_army_logo.png' id = 'sal1' title = 'The salvation army is a proud sponsor of ai360!'></a>
+        <a href = 'https://www.redcross.org'><img id = 'rc_logo' src = 'images/red_cross_logo.png' title = 'The American Red cross is a proud sponsor of ai360!'/></a>
+		
+		<!--MAIN CONTENT-->
+		<img src = 'images/puzzle_piece_1.jpg' id = 'image_1' title = 'We will help you put the pieces back together.'/>
+		<p id = 'text_1'>AI360 is a year-long initiative that aims to close the employment gap for people with disabilities<br>
+		by educating companies and connecting them to talented job seekers. The initiative creates a forum for employers to share<br>
+		their D&I strengths and challenges, particularly in the area of recruiting and retaining people with intellectual and<br>
+		developmental disabilities (I/DD). It also opens the conversation for job seekers with disabilities, who aren't always offered<br>
+		a fair opportunity to access competitive jobs.<br><br>
+        HeartShare Human Services of New York launched the AI360 initiative and is made<br>
+		possible by its founding sponsor The FAR Fund, which provides funding to programs that promote healthy social and emotional<br>
+		development in children and families. HeartShare Human Services of New York nurtures and empowers children and adults diagnosed<br>
+		with I/DD, including autism spectrum disorders, cerebral palsy and Down Syndrome. From residential and education to health and<br>
+		respite services, HeartShare offers greater access to a more independent life. HeartShare has a growing employment program, which<br>
+		trains and places candidates in competitive positions in corporate offices, community organizations, higher education and beyond.<br><br>
+		Our Partners:<br>
+		-List Forthcoming</p>
+		<iframe id = 'video_1' src = "https://www.youtube.com/embed/j-OlO5ZbiX8" frameborder = "0" allow = "autoplay; encrypted-media" allowfullscreen title = 'When I grow up'/>
+	</body>
+</html>

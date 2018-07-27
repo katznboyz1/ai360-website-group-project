@@ -1,0 +1,27 @@
+#footer_heartshare_logo {
+	position: absolute;
+	top: 90vh;
+}
+#footer_twitter_logo {
+    position: absolute;
+    background-color: lightblue;
+    top: 900px;
+    left: 95vw;
+    width: 70px;
+    height: 50px;
+}
+#footer_facebook_logo {
+    position: absolute;
+    background-color: lightblue;
+    width: 50px;
+    height: 50px;
+    top: 900px;
+    left: 90vw;
+}
+#footer_youtube_logo {
+    position: absolute;
+    width: 70px;
+    height: 50px;
+    top: 900px;
+    left: 84vw;
+}

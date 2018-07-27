@@ -1,0 +1,188 @@
+<!DOCTYPE HTML>
+
+<head><link rel = "stylesheet" type = "text/css" href = "header.css" /></head>
+<head><link rel = "stylesheet" type = "text/css" href = "footer.css" /></head>
+
+<script type = 'text/javascript'>
+    function screenset() {
+        console.log('screenset() called')
+        var search_query = document.getElementById('header_search_bar_1').value;
+        var dest = '';
+        search_query = search_query.toLowerCase();
+        
+        if (search_query == 'home') {
+            dest = 'home.html';
+        }
+        else if (search_query == 'about' || search_query == 'about us') {
+            dest = 'about.html';
+        }
+        else if (search_query == 'contact' || search_query == 'contact us') {
+            dest = 'contact%us.html';
+        }
+        else if (search_query == 'jobs') {
+            dest = 'job%assistance.html';
+        }
+        else if (search_query == 'employers' || search_query == 'employer help') {
+            dest = 'employer%help.html';
+        }
+        else {
+            dest = '404%error.html';
+        }
+        window.location.href = dest;
+    }
+    function job_search() {
+        //make this expand the page and bring up search results for the job
+        //use this to set the lines to the correct results: document.getElementById('ID').textContent = 'TEXT';
+        document.getElementById('results_1').textContent = ('We did find 2 jobs located at "' + document.getElementById('text_input_3').value + '" with the position "' + document.getElementById('text_input_2').value + '".');
+    }
+</script>
+
+<style>
+    body {
+        background-color: lightblue;
+        font-family: Segoe UI;
+    }
+    #job_help_button {
+        background-color: darkblue;
+        color: white;
+    }
+    #text_1 {
+        background-color: lightblue;
+        color: black;
+        position: absolute;
+        text-align: center;
+        top: 200px;
+        left: 200px;
+        font-size: 25px;
+    }
+    #input_frame_1 {
+        background-color: gray;
+        position: absolute;
+        top: 450px;
+        left: 450px;
+        width: 950px;
+        height: 400px;
+    }
+    #text_2 {
+        position: absolute;
+        background-color: gray;
+        color: black;
+        top: 490px;
+        left: 460px;
+    }
+    #text_input_1 {
+        position: absolute;
+        width: 200px;
+        top: 550px;
+        left: 560px;
+    }
+    #text_input_2 {
+        position: absolute;
+        width: 200px;
+        top: 600px;
+        left: 560px;
+    }
+    #text_input_3 {
+        position: absolute;
+        width: 200px;
+        top: 650px;
+        left: 560px;
+    }
+    #image_1 {
+        position: absolute;
+        background-color: dimgray;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 450px;
+        height: 300px;
+        top: 490px;
+        left: 920px;
+    }
+    #button_2 {
+        position: absolute;
+        background-color: lightgray;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        color: black;
+        top: 750px;
+        left: 620px;
+    }
+    #footer_heartshare_logo {
+        position: absolute;
+        top: 1500px;
+    }
+    #results_1 {
+        position: absolute;
+        background-color: lightblue;
+        color: black;
+        top: 900px;
+        left: 450px;
+    }
+    #footer_twitter_logo {
+        position: absolute;
+        background-color: lightblue;
+        top: 1520px;
+        left: 95vw;
+        width: 70px;
+        height: 50px;
+    }
+    #footer_facebook_logo {
+        position: absolute;
+        background-color: lightblue;
+        width: 50px;
+        height: 50px;
+        top: 1520px;
+        left: 90vw;
+    }
+    #footer_youtube_logo {
+        position: absolute;
+        width: 70px;
+        height: 50px;
+        top: 1520px;
+        left: 84vw;
+    }
+</style>
+
+<script type = 'text/javascript'>document.title = 'ai360';</script>
+
+
+<html lang = 'en-us'>
+	<body>
+		<!--HEADER-->
+		<div id = 'header_bg'/>
+		<a href = 'home.html' title = 'AI360 logo'><img src = 'images/ai360logo_blue.png' id = 'header_image_1'/></a>
+		<a href = 'about.html' title = 'About us'><text id = 'about_us_button'>About us</text></a>
+		<a href = 'employer%help.html' title = 'Employer help'><text id = 'employer_help_button'>Employer help</text></a>
+		<a href = 'job%assistance.html' title = 'Job finding assistance'><text id = 'job_help_button'>Job finding assistance</text></a>
+		<a href = 'contact%us.html' title = 'Contact us'><text id = 'contact_us_button'>Contact us</text></a>
+        <input id = 'header_search_bar_1' placeholder = 'Search our website'/>
+		<a href = 'home.html' title = 'home page ; current page'><text id = 'home_button'>Home page</text></a>
+        <button onclick = 'screenset()' id = 'button_1'>Search</button>
+		
+		<!--MAIN CONTENT-->
+		<p id = 'text_1'>If you identify as having an intellectual or developmental disability, like autism or cerebral palsy, you may face<br>
+        challenges finding competitive employment. Hiring managers might overlook your resume, or might not be sensitive to your needs<br>
+        during the interviewing process.If you've landed a position, perhaps you don't have the support you were looking for. We welcome you<br>
+        to apply to a position within the AI360 community. Our valued partners have built a Diversity and Inclusion infrastructure within their<br>
+        companies to reach qualified candidates like you. These partners are willing to listen and adapt to open up more opportunities to<br>
+        candidates who might need a little more customized support or accommodations.</p>
+		<div id = 'input_frame_1'></div>
+		<input id = 'text_input_1' placeholder = 'Job name'/>
+		<input id = 'text_input_2' placeholder = 'Job position'/>
+		<input id = 'text_input_3' placeholder = 'Job location'/>
+		<text id = 'text_2'>Fill out this survey below to browse available jobs for you!</text>
+		<img src = 'images/handshake_1.jpg' id = 'image_1' title = 'Welcome to the job!'></img>
+        <button id = 'button_2' title = 'Submit form entries' onclick = 'job_search()'>Submit info</button>
+    <p id = 'results_1'></p>
+		
+		<!--FOOTER-->
+		<a href = 'https://www.heartshare.org/'><img id = 'footer_heartshare_logo' src = 'images/heartshare-logo.png' title = "Go to heartshare's official website by clicking here!"/></a>
+        <a href = 'https://twitter.com/'><img id = 'footer_twitter_logo' src = 'images/twitter_logo.png' title = 'Visit us on twitter!'></a>
+        <a href = 'https://facebook.com/'><img id = 'footer_facebook_logo' src = 'images/facebook_logo.png' title = 'Visit us on facebook!'></a>
+        <a href = 'https://youtube.com/'><img id = 'footer_youtube_logo' src = 'images/youtube_logo.png' title = 'Visit us on youtube!'></a>
+	</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+
+<head><link rel = "stylesheet" type = "text/css" href = "header.css" /></head>
+<head><link rel = "stylesheet" type = "text/css" href = "footer.css" /></head>
+
+<style>
+    body {
+        background-color: lightblue;
+        font-family: Segoe UI;
+    }
+    #home_button {
+        background-color: darkblue;
+        color: white;
+    }
+    #image_1 {
+        position: absolute;
+        background-color: dimgray;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        position: absolute;
+        width: 520px;
+        height: 400px;
+        top: 200px;
+        left: 0px;
+    }
+    #text_block_1 {
+        position: absolute;
+        background-color: lightblue;
+        color: black;
+        top: 300px;
+        left: 600px;
+        font-size: 30px;
+    }
+</style>
+
+<script type = 'text/javascript'>document.title = 'ai360';</script>
+
+<script type = 'text/javascript'>
+    function screenset() {
+        console.log('screenset() called')
+        var search_query = document.getElementById('header_search_bar_1').value;
+        var dest = '';
+        search_query = search_query.toLowerCase();
+        
+        if (search_query == 'home') {
+            dest = 'home.html';
+        }
+        else if (search_query == 'about' || search_query == 'about us') {
+            dest = 'about.html';
+        }
+        else if (search_query == 'contact' || search_query == 'contact us') {
+            dest = 'contact%us.html';
+        }
+        else if (search_query == 'jobs') {
+            dest = 'job%assistance.html';
+        }
+        else if (search_query == 'employers' || search_query == 'employer help') {
+            dest = 'employer%help.html';
+        }
+        else {
+            dest = '404%error.html';
+        }
+        window.location.href = dest;
+    }
+</script>
+
+<html lang = 'en-us'>
+	<body>
+		<!--HEADER-->
+		<div id = 'header_bg'/>
+		<a href = 'home.html' title = 'AI360 logo'><img src = 'images/ai360logo_blue.png' id = 'header_image_1'/></a>
+		<a href = 'about.html' title = 'About us'><text id = 'about_us_button'>About us</text></a>
+		<a href = 'employer%help.html' title = 'Employer help'><text id = 'employer_help_button'>Employer help</text></a>
+		<a href = 'job%assistance.html' title = 'Job finding assistance'><text id = 'job_help_button'>Job finding assistance</text></a>
+		<a href = 'contact%us.html' title = 'Contact us'><text id = 'contact_us_button'>Contact us</text></a>
+		<a href = 'home.html' title = 'home page ; current page'><text id = 'home_button'>Home page</text></a>
+        <input id = 'header_search_bar_1' placeholder = 'Search our website'/>
+        <button onclick = 'screenset()' id = 'button_1'>Search</button>
+		
+		<!--MAIN CONTENT-->
+		<img src = 'images/people_holding_trophy.jpg' id = 'image_1' title = 'People work better together.'/>
+		<p id = 'text_block_1'>AI360 is a year-long initiative that aims to close the employment gap for people<br>
+		with disabilities by educating companies and connecting them to talented job seekers. </p>
+		
+		<!--FOOTER-->
+		<a href = 'https://www.heartshare.org/'><img id = 'footer_heartshare_logo' src = 'images/heartshare-logo.png' title = "Go to heartshare's official website by clicking here!"/></a>
+        <a href = 'https://twitter.com/'><img id = 'footer_twitter_logo' src = 'images/twitter_logo.png' title = 'Visit us on twitter!'></a>
+        <a href = 'https://facebook.com/'><img id = 'footer_facebook_logo' src = 'images/facebook_logo.png' title = 'Visit us on facebook!'></a>
+        <a href = 'https://youtube.com/'><img id = 'footer_youtube_logo' src = 'images/youtube_logo.png' title = 'Visit us on youtube!'></a>
+	</body>
+</html>

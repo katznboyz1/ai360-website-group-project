@@ -1,0 +1,101 @@
+#header_bg {
+    position: absolute;
+    width: 99vw;
+    height: 120px;
+    padding-left: 0px;
+    padding-top: 0px;
+    background-color: gray;
+    z-index: 1;
+}
+#header_search_bar_1 {
+    position: absolute;
+    width: 300px;
+    top: 80px;
+    left: 35vw;
+    height: 30px;
+    z-index: 15px;
+}
+#header_image_1 {
+    position: absolute;
+    width: 300px;
+    height: 120px:
+    z-index: 2;
+}
+#about_us_button {
+    position: absolute;
+    background-color: lightblue;
+    font-size: 18px;
+    color: black;
+    border-radius: 100px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    z-index: 3;
+    top: 80px;
+    left: 92vw;
+}
+#employer_help_button {
+    position: absolute;
+    background-color: lightblue;
+    font-size: 18px;
+    color: black;
+    border-radius: 100px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    z-index: 3;
+    top: 80px;
+    left: 83vw;
+}
+#job_help_button {
+    position: absolute;
+    background-color: lightblue;
+    font-size: 18px;
+    color: black;
+    border-radius: 100px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    z-index: 3;
+    top: 80px;
+    left: 71vw;
+}
+#contact_us_button {
+    position: absolute;
+    background-color: lightblue;
+    font-size: 18px;
+    color: black;
+    border-radius: 100px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    z-index: 3;
+    top: 80px;
+    left: 64vw;
+}
+#home_button {
+    position: absolute;
+    background-color: lightblue;
+    font-size: 18px;
+    color: black;
+    border-radius: 100px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    z-index: 3;
+    top: 80px;
+    left: 56vw;
+}
+#button_1 {
+    position: absolute;
+    top: 90px;
+    left: 47vw;
+    background-color: white;
+    color: black;
+    z-index: 20px;
+}

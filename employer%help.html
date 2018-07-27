@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+
+<head><link rel = "stylesheet" type = "text/css" href = "header.css" /></head>
+<head><link rel = "stylesheet" type = "text/css" href = "footer.css" /></head>
+
+<script type = 'text/javascript'>
+    function screenset() {
+        console.log('screenset() called')
+        var search_query = document.getElementById('header_search_bar_1').value;
+        var dest = '';
+        search_query = search_query.toLowerCase();
+        
+        if (search_query == 'home') {
+            dest = 'home.html';
+        }
+        else if (search_query == 'about' || search_query == 'about us') {
+            dest = 'about.html';
+        }
+        else if (search_query == 'contact' || search_query == 'contact us') {
+            dest = 'contact%us.html';
+        }
+        else if (search_query == 'jobs') {
+            dest = 'job%assistance.html';
+        }
+        else if (search_query == 'employers' || search_query == 'employer help') {
+            dest = 'employer%help.html';
+        }
+        else {
+            dest = '404%error.html';
+        }
+        window.location.href = dest;
+    }
+</script>
+
+<style>
+    body {
+        background-color: lightblue;
+        font-family: Segoe UI;
+    }
+    #employer_help_button {
+        background-color: darkblue;
+        color: white;
+    }
+    #text_1 {
+        background-color: lightblue;
+        color: black;
+        position: absolute;
+        top: 190px;
+        left: 700px;
+    }
+    #video_1 {
+        position: absolute;
+        background-color: dimgray;
+        width: 560px;
+        height: 313px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        top: 200px;
+        left: 0px;
+    }
+    #usdol_portal_1 {
+        position: absolute;
+        background-color: lightblue;
+        color: black;
+        top: 550px;
+        left: 700px;;
+    }
+</style>
+
+<script type = 'text/javascript'>document.title = 'ai360';</script>
+
+
+<html lang = 'en-us'>
+	<body>
+		<!--HEADER-->
+		<div id = 'header_bg'/>
+		<a href = 'home.html' title = 'AI360 logo'><img src = 'images/ai360logo_blue.png' id = 'header_image_1'/></a>
+		<a href = 'about.html' title = 'About us'><text id = 'about_us_button'>About us</text></a>
+		<a href = 'employer%help.html' title = 'Employer help'><text id = 'employer_help_button'>Employer help</text></a>
+		<a href = 'job%assistance.html' title = 'Job finding assistance'><text id = 'job_help_button'>Job finding assistance</text></a>
+		<a href = 'contact%us.html' title = 'Contact us'><text id = 'contact_us_button'>Contact us</text></a>
+		<a href = 'home.html' title = 'home page ; current page'><text id = 'home_button'>Home page</text></a>
+        <input id = 'header_search_bar_1' placeholder = 'Search our website'/>
+        <button onclick = 'screenset()' id = 'button_1'>Search</button>
+		
+		<!--FOOTER-->
+		<a href = 'https://www.heartshare.org/'><img id = 'footer_heartshare_logo' src = 'images/heartshare-logo.png' title = "Go to heartshare's official website by clicking here!"/></a>
+        <a href = 'https://twitter.com/'><img id = 'footer_twitter_logo' src = 'images/twitter_logo.png' title = 'Visit us on twitter!'></a>
+        <a href = 'https://facebook.com/'><img id = 'footer_facebook_logo' src = 'images/facebook_logo.png' title = 'Visit us on facebook!'></a>
+        <a href = 'https://youtube.com/'><img id = 'footer_youtube_logo' src = 'images/youtube_logo.png' title = 'Visit us on youtube!'></a>
+		
+		<!--MAIN CONTENT-->
+		<a href = 'https://www.bls.gov/news.release/disabl.nr0.htm' id = 'usdol_portal_1'>US department of labor statistics</a>
+		<p id = 'text_1'>According to the U.S. Department of Labor, not only are 8 out of 10 people with any kind of disability underemployed, but<br>
+		they also are more likely to secure part-time positions and work in service occupations.<br><br>
+		Join the Conversation<br>
+		AI360 and its partners are trying to change that.  Your Diversity and Inclusion strategy is in place, but there's always an<br>
+		opportunity to learn more. Join our roundtable discussions to hear more <br>
+		from how our partners meet their hiring goals, and also from the disability community, which train and support candidates.<br><br>
+		The Summit<br>
+		The AI360 initiative will culminate in the two-day Ability and Inclusion Summit on November 1-2, 2018. The first day will offer<br>
+		panels and workshops for employers. The second day will be a job fair, allowing qualified candidates with disabilities to initiate<br>
+		the conversation with participating employers. The summit will include an AI360 "Shark Tank" Pitch Project. This project will provide<br>
+		a forum for non-profits and start-ups supporting individuals with disabilities to pitch their program for funding and/or professional<br>
+		support throughout the year.</p>
+		<iframe src="https://www.youtube.com/embed/fPFul72pTq4" frameborder = "0" allow = "autoplay; encrypted-media" allowfullscreen id = 'video_1'/>
+	</body>
+</html>
